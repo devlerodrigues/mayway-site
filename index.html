@@ -24,7 +24,7 @@ details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
 details[open] .faq-mais{transform:rotate(45deg)}
 </style>
-<style>@media(max-width:760px){.nav-links a:not(.cta){display:none} .cta{white-space:nowrap;padding:10px 14px!important} header nav>a:first-child{white-space:nowrap;font-size:21px!important} header nav{flex-wrap:nowrap!important;gap:12px!important}} html{scroll-behavior:smooth} [id]{scroll-margin-top:84px} img{max-width:100%}</style>
+<style>@media(max-width:760px){.nav-links a:not(.cta){display:none} .cta{white-space:nowrap;padding:10px 14px!important} header nav>a:first-child{white-space:nowrap;font-size:21px!important} header nav{flex-wrap:nowrap!important;gap:10px!important;padding:12px 16px!important}} html{scroll-behavior:smooth} [id]{scroll-margin-top:84px} img{max-width:100%}</style>
 </head>
 <body>
 <div style="font-family: Lato, system-ui, sans-serif; color: #263C46; background: #FAF7F3; line-height: 1.55; font-size: 17px">
@@ -186,27 +186,27 @@ Prêmios por desempenho com base no art. 457 da CLT</p>
 <div style="margin-top: 6px; font-size: 13px; color: #6B7475"><span data-sim="valorFmt"></span> em prêmios + <b style="color: #9D2941"><span data-sim="encargos"></span> de FGTS e INSS patronal</b></div>
 </div>
 <div>
-<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 15px"><span>Pagando como <b>prêmio pela Mayway</b></span><b style="font-size: 18px"><span data-sim="valorFmt"></span> + taxa</b></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 15px"><span>Pagando como <b>prêmio pela Mayway</b></span><b style="font-size: 18px"><span data-sim="custoMayway"></span></b></div>
 <div style="margin-top: 8px; height: 22px; border-radius: 6px; background: #F0E7DF; overflow: hidden; display: flex">
-<div style="width: 78.1%; background: #2F6B57"></div>
+<div style="width: 78.1%; background: #2F6B57"></div><div style="width: 5.5%; background: #C2A15A"></div>
 </div>
-<div style="margin-top: 6px; font-size: 13px; color: #6B7475"><span data-sim="valorFmt"></span> em prêmios, sem FGTS e sem INSS. A taxa da Mayway é combinada com cada empresa.</div>
+<div style="margin-top: 6px; font-size: 13px; color: #6B7475"><span data-sim="valorFmt"></span> em prêmios + <b style="color: #7A5C1E"><span data-sim="taxa"></span> de taxa Mayway (7%)</b>, sem FGTS e sem INSS.</div>
 </div>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
 <div style="flex: 1 1 320px; min-width: 0; background: #2F6B57; border-radius: 14px; padding: 22px">
 <div style="font-size: 14px; color: #DCEBE4">Se hoje você paga esse valor na folha</div>
-<div style="font-family: 'EB Garamond', Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.1; margin-top: 4px">economiza <span data-sim="encargos"></span>/mês</div>
-<div style="font-size: 15px; color: #DCEBE4; margin-top: 4px">em encargos, ou <span data-sim="encargosAno"></span> por ano.</div>
+<div style="font-family: 'EB Garamond', Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.1; margin-top: 4px">economiza <span data-sim="economia"></span>/mês</div>
+<div style="font-size: 15px; color: #DCEBE4; margin-top: 4px">já descontada a taxa da Mayway. São <span data-sim="economiaAno"></span> por ano.</div>
 </div>
 <div style="flex: 1 1 320px; min-width: 0; background: #14232D; border: 1px solid #2E4A5C; border-radius: 14px; padding: 22px">
 <div style="font-size: 14px; color: #D3DCDF">Se hoje você paga por fora</div>
 <div style="font-family: 'EB Garamond', Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.1; margin-top: 4px">até <span data-sim="irpj"></span>/mês</div>
-<div style="font-size: 15px; color: #D3DCDF; margin-top: 4px">voltam em IRPJ e CSLL com a nota fiscal (Lucro Real), e acaba o risco trabalhista. São <span data-sim="irpjAno"></span> por ano.</div>
+<div style="font-size: 15px; color: #D3DCDF; margin-top: 4px">voltam em IRPJ e CSLL sobre o total da nota (Lucro Real), e acaba o risco trabalhista. São <span data-sim="irpjAno"></span> por ano.</div>
 </div>
 </div>
-<p style="margin: 0; font-size: 13px; color: #B9C6CC">Cálculo simplificado: FGTS de 8% e INSS patronal de 20% (empresas do Lucro Real ou Presumido; no Simples Nacional depende do anexo), sem RAT, terceiros, férias e 13º. Economia de IRPJ/CSLL de até 34% só para empresas do Lucro Real. As duas situações são alternativas: não se somam. Confirme com seu contador.</p>
+<p style="margin: 0; font-size: 13px; color: #B9C6CC">Cálculo simplificado: FGTS de 8% e INSS patronal de 20% (empresas do Lucro Real ou Presumido; no Simples Nacional depende do anexo), sem RAT, terceiros, férias e 13º. Taxa de exemplo de 7%; a taxa final é combinada com cada empresa. Economia de IRPJ/CSLL de até 34% sobre o total da nota, só para empresas do Lucro Real. As duas situações são alternativas: não se somam. Confirme com seu contador.</p>
 </div>
 </div>
 </section>
@@ -388,8 +388,8 @@ Prêmios por desempenho com base no art. 457 da CLT</p>
   var presets=[5000,10000,20000,50000,100000];
   var base='padding: 10px 16px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; min-height: 44px; ';
   function desenhar(){
-    var v=Number(r.value), enc=v*0.28, ir=v*0.34;
-    var val={valorFmt:brl(v),custoFolha:brl(v+enc),encargos:brl(enc),irpj:brl(ir),encargosAno:brl(enc*12),irpjAno:brl(ir*12)};
+    var v=Number(r.value), enc=v*0.28, tx=v*0.07, ir=(v+tx)*0.34, eco=enc-tx;
+    var val={valorFmt:brl(v),custoFolha:brl(v+enc),custoMayway:brl(v+tx),taxa:brl(tx),economia:brl(eco),economiaAno:brl(eco*12),encargos:brl(enc),irpj:brl(ir),encargosAno:brl(enc*12),irpjAno:brl(ir*12)};
     document.querySelectorAll('[data-sim]').forEach(function(el){el.textContent=val[el.getAttribute('data-sim')];});
     box.querySelectorAll('button').forEach(function(b){var on=Number(b.dataset.v)===v;
       b.setAttribute('aria-pressed',on);
